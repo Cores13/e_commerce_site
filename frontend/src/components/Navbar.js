@@ -6,7 +6,9 @@ const NavBar = ({click}) => {
         <nav className='navbar'>
 
             <div className='navbar__logo'>
-                <h2>MERN Shopping cart</h2>
+                <Link to='/'>
+                    <h2>MERN Shopping cart</h2>
+                </Link>
             </div>
 
             <ul className='navbar__links'>
