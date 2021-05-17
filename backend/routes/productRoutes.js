@@ -8,7 +8,7 @@ const {getAllProducts, getProductById} = require('../controller/productControlle
 router.get('/', getAllProducts);
 
 //@desc GET a product by id from db
-//@route GET /api/product/:id
+//@route GET /api/products/:id
 //@access Public
 router.get('/:id', getProductById);
 

@@ -6,9 +6,10 @@ export const getProducts = () => async (dispatch) => {
         dispatch({type: actionTypes.GET_PRODUCTS_REQUREST});
 
         const {data} = await axios.get('/api/products');
+
         dispatch({
             type: actionTypes.GET_PRODUCTS_SUCCESS,
-            payload: data
+            payload: data,
         });
     }catch (error){
         dispatch({
@@ -25,9 +26,10 @@ export const getProductDetails = (id) => async (dispatch) => {
         dispatch({type: actionTypes.GET_PRODUCT_DETAILS_REQUREST});
 
         const {data} = await axios.get(`/api/products/${id}`);
+
         dispatch({
             type: actionTypes.GET_PRODUCT_DETAILS_SUCCESS,
-            payload: data
+            payload: data,
         });
     }catch (error){
         dispatch({
