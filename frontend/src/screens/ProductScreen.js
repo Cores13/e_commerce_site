@@ -18,7 +18,7 @@ const ProductScreen = ({match, history}) => {
         if(product && match.params.id !== product._id){
             dispatch(getProductDetails(match.params.id));
         }
-    }, [dispatch]);
+    }, [dispatch, product, match]);
 
     return (
     <div className="productscreen">
